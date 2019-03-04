@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+</head>
+<body>
+
+
+ 
+
+ <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+  	<nav class="uk-navbar-container uk-navbar" id="main-nav">
+        <a href="#" class="uk-navbar-item uk-logo"><img id="logo" src="dubai-png.png"></a>
+	
+        <ul class="uk-navbar-nav main-nav">
+		  <li><a href="#home"  uk-scroll>Home</a></li>
+          <li><a href="#about" uk-scroll>About</a></li>
+          <li><a href="#slider-content" uk-scroll>Sightseeings</a></li>
+          <li><a href="#video-page"  uk-scroll>Video</a></li>
+        </ul>
+
+        <form class="uk-navbar-item  uk-search uk-search-default" id="search">
+        <span uk-search-icon id="icon"></span>
+        <input class="uk-search-input" type="search" placeholder="Search...">
+        </form>
+   </nav>
+</div>
+     
+    
+<div id="header" class="uk-width-1-1 uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('dubai.jpg');">
+
+<div class="uk-width-1-2@m uk-text-center uk-margin-auto " id="header-txt">
+        <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; viewport: 0.5;">DUBAI</h1>
+        <h3 uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; viewport: 0.5;">Discover all that is possible</h3>
+    </div>
+</div>
+
+<div class="uk-grid" id="about" >
+   <div class="uk-width-3-4" id="section1">
+    <div  data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:300}"> 
+    <h1 class="uk-text-center header-one" data-uk-scrollspy="{cls:'uk-animation-fade', target:'.header-one', delay:300}">ABOUT</h1></div>
+    
+<ul uk-tab>
+    <li><a href="#">Overview</a></li>
+    <li><a href="#">Attractions</a></li>
+    <li><a href="#">Nature</a></li>
+</ul>
+
+
+
+<ul class="uk-switcher uk-margin">
+    <li>Dubai is located on the Eastern coast of the Arabian Peninsula, in the south west corner of the Arabian Gulf. It is extremely well known for its warm hospitality and rich cultural heritage, and the Emirati people are welcoming and generous in their approach to visitors. With year-round sunshine, intriguing deserts, beautiful beaches, luxurious hotels and shopping malls, fascinating heritage attractions and a thriving business community, Dubai receives millions of leisure and business visitors each year from around the world. </li>
+    <li>Although Dubai is seen as a relatively young destination, it has a fascinating history and a vibrant heritage that offers visitors an intriguing glimpse into Arabian culture. A good place to start exploring the history and heritage of Dubai is the Dubai Museum: it is located inside Al Fahidi Fort, one of Dubai’s oldest buildings dating back to 1787. There are other museums in Dubai and in surrounding emirates that also offer important insights into the history and growth of the city and of the United Arab Emirates.</li>
+    <li>​ Dubai enjoys an arid subtropical climate, with blue skies and sunshine all year round. The hottest months are between June and September whereas the coolest time is between December and March. There is very little rainfall in Dubai, but when showers do fall it is mainly in the cooler months.Dubai, with an area of 3,885 square kilometers, is the second largest emirate in the UAE. Situated on the banks of the Dubai Creek, a natural inlet from the Gulf which divides the city into the Deira district to its north and Bur Dubai on its south, the city ranks as the UAE's most important port and commercial center. </li>
+</ul>
+</div>
+</div>
+
+
+<div class="uk-grid" id="slider-content">
+<div class="uk-width-3-4" id="slider-center">
+        <h1 class="uk-text-center text-top">Sightseeings</h1>
+
+<div uk-slider="center: true" >
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+        <ul class="uk-slider-items uk-child-width-1-3@s uk-grid">
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="dubai3.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Downtown Dubai</h3>
+                        <p>Downtown Dubai used to be called Downtown Burj Dubai and is home to several of the city’s key landmark sites, including the Burj Khalifa and Dubai Fountain. Downtown Dubai has a population of about 100,000 and covers an area of 2 square kilometres. On completion, it is estimated to cost in the region of US$20 billion.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="dubai4.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Palm Islands</h3>
+                        <p>When innovation meets hard work, the results are astounding as seen at the Palm Islands in Dubai, an ambitious project visualized by Nakheel Properties; these man-made islands were constructed to accommodate the ever-growing tourist influx in Dubai. Shaped to resemble a palm tree, the Palm Trilogy defines everyday luxury living.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="dubai5.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Dubai Marina</h3>
+                        <p>Located in what is known as ‘new Dubai’, Dubai Marina is a man-made canal city built to encourage luxurious lifestyles through exclusive waterfront constructions along the Persian Gulf shoreline. These include swanky hotels, aristocratic residential palaces and extravagant shopping and entertainment centres.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="dubai2.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Burj Al Arab</h3>
+                        <p>Everyone dreams of staying at the Burj Al Arab, the most extravagant hotel in the world. This sail shaped hotel is world’s first seven star hotel developed by Jumeirah Hotels & Resorts chooses its customers and not vice versa. Burj Al Arab’s billowing sail enjoys being a focus of public attention with its glittery gold interiors.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="dubai6.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">The Dubai Fountain</h3>
+                        <p>The Dubai Fountain is a record breaking, musical fountain show located on the man-made Burj Khalifa Lake. Water is shot up in the air to an altitude of over 500ft and accompanied by classical & contemporary music from around the world. The fountain opened in 2009 but in 2010 the fountain’s length was increased to 275m.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+        </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+
+</div>
+</div>
+
+<div class="uk-grid" id="video-page">
+    <div class="uk-width-3-4" id="video-section">
+                <h1 class="uk-text-center text-top">VIDEO</h1>
+
+        <div id="video">
+            <iframe src="https://www.youtube.com/embed/SLaYPmhse30?autoplay=1" width="760" height="515" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="uk-grid">
+        <div class="uk-width-1-1">
+	        <p> © 2019. All rights reserved. Created by Daniela Ivanova, Simona Doicheva, Vania Sokerova.</p>
+        	<span class="uk-margin-small-right" uk-icon="instagram"></span>
+        	<span class="uk-margin-small-right" uk-icon="facebook"></span>
+        	<span class="uk-margin-small-right" uk-icon="tumblr"></span>
+        	<span class="uk-margin-small-right" uk-icon="twitter"></span>
+        	<span class="uk-margin-small-right" uk-icon="youtube"></span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
